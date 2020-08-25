@@ -1,12 +1,3 @@
-%&"main"
-% Fakesection 检错
-% Fakesubsubsection 宏包
-\RequirePackage[l2tabu, orthodox]{nag}
-% XXX: use nag at first to make all packages effecitive <03-11-19> %
-% Fakesubsubsection 编译器
-\RequirePackage{ifxetex}
-\RequireXeTeX
-
 \documentclass[twoside, openright]{report}
 % Fakesection 基础
 % Fakesubsection 文字
@@ -166,6 +157,7 @@
 \usepackage{overpic}
 % Fakesubsubsection 徽标
 \usepackage{hologo}
+\usepackage[njust]{cnlogo}
 % Fakesubsubsection 条形码
 \usepackage{ean13isbn}
 % Fakesubsubsection 二维码
@@ -268,7 +260,7 @@
 
 		\vspace{1\ccwd}
 
-		\includegraphics[width=7.41cm]{NJUST.ai}
+    \njustwhole[njust][0.5]
 
 		\vspace{0.2\ccwd}
 
